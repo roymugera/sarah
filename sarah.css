@@ -13,7 +13,6 @@ html {
 body { 
     background-color: #FFFFFF;
     margin: auto;
-    overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
     font-size: 1em;
     line-height: 1.6;
@@ -23,12 +22,20 @@ body {
     font-weight: 100;
 }
 
+.page_container {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
 /** Global Styling **/
 
 .box {
     width: 400px;
-    height: 630px;
+    height: 650px;
     margin: 20px;
+    padding-bottom: 40px;
     box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.719);
 }
 
@@ -97,7 +104,6 @@ a {
     text-decoration: none!important;
     cursor: pointer;
 }
-
 
 header {
     min-height: 50px;
@@ -189,7 +195,6 @@ header .logo a {
     margin-top: 30px;
     padding-right: 12px;
     font-size: 18px;
-    line-height: 21px;
 }
 
 #hero .contact_btn {
@@ -339,7 +344,7 @@ main .btn a {
     display: grid;
     justify-content: center;
     align-items: center;
- }
+}
 
 .business_card {
     background-color: transparent;
@@ -351,7 +356,6 @@ main .btn a {
     align-items: center;
     position: relative;
     top: 40px;
-    border: 1px solid red;
 }
 
 .business_card_inner {
@@ -476,12 +480,285 @@ main .btn a {
     top: 5px;
 }
 
-#mobile_nav {
+.mobile_header {
     visibility: hidden;
     display: none;
 }
 
-/*** Media Queries (Responsive Design) ***/
+
+
+@media screen and (min-width:320px) and (max-width:576px) {
+
+    header {
+        visibility: hidden;
+        display: none;
+    }
+
+    .mobile_header {
+        visibility: visible;
+        display: block;
+        min-height: 50px;
+        width: 100%;
+        background-color: #CB9F7F;
+        padding: 20px 0px;
+    }
+
+    .mobile_header .container { 
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #side_menu {
+		background-color: rgb(0, 0, 0);
+		height: 100vh;
+		width: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 2;
+		opacity: 1;
+		overflow-x: hidden;
+		padding-top: 80px;
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+	}
+
+    #side_menu a {
+        padding: 25px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        color: #ccc;
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 80px;
+        transition: 0.3s;
+    }
+
+    .fa-bars {
+        color: #000000;
+        visibility: visible;
+        margin-top: 17px;
+    }
+    
+    .fa-times {
+        position: relative;
+        right: 92px;
+        top: -100px;
+        float: right;
+    }
+
+    .mobile_logo a {
+        font-size: 40px;
+        text-decoration: none;
+        color: #090C08;
+        font-family: 'Square Peg', cursive;
+    }
+
+    #hero {
+        width: 100%;
+        background-color: #CB9F7F;
+        margin: auto;
+        margin-top: -5px;
+        padding: 0;
+        height: 100vh;
+        border: 1px solid red;
+    }
+    
+    #hero .container {
+        width: 100%;
+        height: auto;
+        display: grid;
+    }
+
+    #hero img {
+        visibility: hidden;
+        display: none;
+    }
+
+    #hero h1 {
+        font-size: 35px;
+        font-family: 'Josefin Sans', sans-serif;
+        width: 100vw;
+        padding: 0px 30px;
+    }
+    
+    #hero p {
+        margin-top: 30px;
+        padding: 0px 30px;
+        line-height: 1.5;
+        width: 100vw;
+    }
+    
+    #hero .contact_btn {
+        margin-top: 40px;
+        margin-left: 20px;
+        width: 500px;
+    }
+    
+    #hero .contact_btn a {
+        background-color: rgba(0, 0, 0, 0.973);
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        width: 250px;
+        border-style: none;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .box {
+        margin: 20px 10px;
+        height: auto;
+    }
+
+    .square_bottom {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .square_bottom p {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    main .container {
+        width: auto;
+    }
+
+    #portfolio .container {
+        width: 90%;
+        margin: 80px auto;
+    }
+
+    .second_header {
+        background-color: #090C08;
+    }
+    
+    .second_header .mobile_logo a, .second_header .fa-bars{
+        color: #FFFFFF;
+    }
+    
+    #about .container {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50px;
+    }
+    
+    #about .top {
+        width: auto;
+        margin: 0px 30px;
+    }
+    
+    #about p {
+        padding: 0;
+    }
+
+    #about img {
+        width: 400px;
+        margin-bottom: 30px;
+    }
+
+
+    .business_card {
+        width: 85vw;  
+    }
+
+    .business_card_front {
+        background-color: #fb910fc7;
+        display: grid;
+    }
+
+    .business_card_back {
+        display: grid;
+    }
+    
+    .business_card_info {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .line {
+       visibility: hidden;
+       display: none;
+    }
+        
+    .business_card_links {
+        position: relative;
+        top: -10px;
+        display: grid;
+        grid-template-rows: 7fr 9fr 8fr 10fr;
+    }
+    
+}
+
+
+@media screen and (min-width:577px) and (max-width:1440px){
+
+    #hero {
+        height: 85vh;
+    }
+    
+    #hero img {
+        width: 450px;
+        height: 450px;
+    }
+    
+    #hero .content {
+        width: 50%;
+    }
+    
+    #hero h1 {
+        font-size: 40px;
+    }
+    
+    #hero p {
+        font-size: 17px;
+    }
+    
+    #hero .contact_btn a { 
+        width: 300px;
+    }
+
+    #about {
+        height: 100%;
+        min-height: 110vh;
+    }
+
+    #about .container {
+        width: 65%;
+        position: relative;
+        top: 180px;
+    }
+
+    #about .top {
+        width: auto; 
+    }
+
+    #about p {
+        padding-right: 80px;
+    }
+
+    #about img {
+        width: 350px;
+        height: auto;
+        position: relative;
+        top: -25px;
+    }
+}
+
+
+/** 
+
 
 @media screen and (max-width:1440px){
 
@@ -537,377 +814,20 @@ main .btn a {
     }
 }
 
-@media screen and (max-width:1024px){
 
-    header li {
-        padding: 0px 12px;
-    }
-    
-    header li a {
-        text-decoration: none;
-        font-size: 18px;
-    }
 
-    /*** Hero Section: Mobile ***/
 
-    #hero {
-        height: 85vh;
-    }
-    
-    #hero img {
-        visibility: hidden;
-        display: none;
-    }
-    
-    #hero .content {
-        width: 100%;
-        padding: 50px 0px;
-    }
+**/
 
-    #hero h1 {
-        font-size: 40px;
-    }
-    
-    #hero p {
-        font-size: 17px;
-    }
-    
-    #hero .contact_btn a { 
-        width: 300px;
-    }
 
-    /*** About Section: Mobile ***/
 
-    #about {
-        height: 100%;
-        min-height: 110vh;
-    }
 
-    #about .container {
-        width: 65%;
-        position: relative;
-        top: 180px;
-    }
 
-    #about .top {
-        width: auto; 
-    }
 
-    #about p {
-        padding-right: 80px;
-    }
 
-    #about img {
-        width: 350px;
-        height: auto;
-        position: relative;
-        top: -25px;
-    }
-}
 
-@media screen and (max-width:768px){
 
-    header li, header li a {
-        visibility: hidden;
-        display: none;
-    }
+   
 
-    
-    #mobile_nav {
-        visibility: visible;
-        display: flex;
-        background-color: #CB9F7F;
-    }
 
-    #side_menu {
-		background-color: rgb(0, 0, 0);
-		height: 100vh;
-		width: 0;
-		position: fixed;
-		right: 0;
-		top: 0;
-		z-index: 2;
-		opacity: 1;
-		overflow-x: hidden;
-		padding-top: 80px;
-		transition: 0.5s;
-		-webkit-transition: 0.5s;
-	}
-
-    #side_menu a {
-        padding: 25px 20px;
-        text-decoration: none;
-        font-size: 17px;
-        color: #ccc;
-        display: block;
-        position: relative;
-        top: 30px;
-        left: 80px;
-        transition: 0.3s;
-    }
-
-    .fa-bars {
-        color: #000000;
-        visibility: visible;
-        position: relative;
-        top: 13px;
-        right: -50px;
-        float: right;
-    }
-    
-    .fa-times {
-        position: relative;
-        right: 150px;
-        top: -108px;
-        float: right;
-        font-size: 25px;
-    }
-
-
-    /*** About Section: Mobile ***/
-
-    #about {
-        height: 100%;
-        min-height: 110vh;
-    }
-
-    #about .container {
-        width: 65%;
-        position: relative;
-        top: 180px;
-    }
-
-    #about .top {
-        width: auto; 
-    }
-
-    #about p {
-        padding-right: 80px;
-    }
-
-    #about img {
-        width: 350px;
-        height: auto;
-        position: relative;
-        top: -25px;
-    }
-}
-
-@media screen and (max-width:425px){
-
-    header .container {
-        width: 65%;
-    }
-
-    .fa-bars {
-        position: relative;
-        top: 13px;
-    }
-    
-    .fa-times {
-        position: relative;
-        right: 85px;
-        top: -105px;
-    }
-
-    /*** Hero Section: Mobile ***/
-
-      #hero {
-        height: 90vh;
-    }
-    
-    #hero .content {
-        width: 100%;
-        padding: 0px; 
-    }
-
-    /** Global Styling **/
-
-    .box {
-        width: 400px;
-        height: 700px;
-        margin: 20px;
-        box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.719);
-    }
-
-
-    /*** About Section: Mobile ***/
-
-    #about {
-        height: 100%;
-        min-height: 110vh;
-    }
-
-    #about .container {
-        width: 65%;
-        position: relative;
-        top: 180px;
-    }
-
-    #about .top {
-        width: auto; 
-    }
-
-    #about p {
-        padding-right: 80px;
-    }
-
-    #about img {
-        width: 350px;
-        height: auto;
-        position: relative;
-        top: -25px;
-    }
-}
-
-@media screen and (max-width:375px){
-
-    header .container {
-        width: 65%;
-    }
-
-    header .logo a {
-        font-size: 35px;
-        position: relative;
-        top: 3px;
-    }
-
-    .fa-bars {
-        position: relative;
-        top: 13px;
-    }
-    
-    .fa-times {
-        position: relative;
-        right: 85px;
-        top: -105px;
-    }
-
-    /*** Hero Section: Mobile ***/
-
-    #hero {
-        height: 100vh;
-    }
-    
-    #hero .content {
-        width: 100%;
-        padding: 0px; 
-        margin-top: -60px;
-    }
-
-    /** Global Styling **/
-
-    .box {
-        width: 400px;
-        height: 700px;
-        margin: 20px;
-        box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.719);
-    }
-
-
-    /*** About Section: Mobile ***/
-
-    #about {
-        height: 100%;
-        min-height: 110vh;
-    }
-
-    #about .container {
-        width: 65%;
-        position: relative;
-        top: 180px;
-    }
-
-    #about .top {
-        width: auto; 
-    }
-
-    #about p {
-        padding-right: 80px;
-    }
-
-    #about img {
-        width: 350px;
-        height: auto;
-        position: relative;
-        top: -25px;
-    }
-}
-
-@media screen and (max-width:320px){
-
-    header .logo a{
-        font-size: 35px;
-        position: relative;
-        top: 2px;
-        left: -20px;
-    }
-
-    header .container {
-        width: 50%;
-    }
-
-
-    /*** Hero Section: Mobile ***/
-
-    #hero {
-        height: 90vh;
-    }
-    
-    #hero .content {
-        width: 100%;
-        margin-top: -50px; 
-    }
-
-    
-    #hero h1 {
-        font-size: 30px;
-    }
-
-    #hero p {
-        margin-top: 30px;
-        padding-right: 12px;
-        font-size: 16px;
-    }
-
-
-
-    /** Global Styling **/
-
-    .box {
-        width: 400px;
-        height: 700px;
-        margin: 20px;
-        box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.719);
-    }
-
-
-    /*** About Section: Mobile ***/
-
-    #about {
-        height: 100%;
-        min-height: 110vh;
-    }
-
-    #about .container {
-        width: 65%;
-        position: relative;
-        top: 180px;
-    }
-
-    #about .top {
-        width: auto; 
-    }
-
-    #about p {
-        padding-right: 80px;
-    }
-
-    #about img {
-        width: 350px;
-        height: auto;
-        position: relative;
-        top: -25px;
-    }
-}
 
