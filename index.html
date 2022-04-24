@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Roy Mugera">
+    <meta name="author" content="Developer Roy">
     <meta name="description" content="Sarah Harris, Freelance Journalist based in the UK"> <!--SEO-->
     <meta name="keywords" content="Freelance Journalist UK, Freelance Journalist near me"> <!--SEO-->
     <link rel="stylesheet" href="sarah.css">
     <title>Sarah Harris | Freelance Journalist</title>
 </head>
 <body>
-    <!-- Global Styling -->
     <header>
         <div class="container">
             <div class="logo">
@@ -25,9 +24,24 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <div id="mobile_nav">
+                <div id="menu_icon" onclick="menuOpen()">
+                    <a href="#">
+                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div id="side_menu" onclick="menuClose()">
+                    <a href="#">
+                        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a> 
+                </div>
+            </div>
         </div> 
-    </header>
-
+    </header> 
     <!-- Hero Section -->
     <section id="hero">
         <div class="container">
@@ -42,27 +56,23 @@
                 <div class="contact_btn">
                     <a href="contact.html">Contact</a>
                 </div>
-
-<!---
-                <div class="contact_links">
-                    <a href="https://twitter.com/sarahthejourno" target="_blank">
-                        <img src="shimages/twitter.svg">
-                    </a>
-                    <a href="https://www.linkedin.com/in/sarah-harris-79625115b/" target="_blank">
-                        <img src="shimages/linkedin.svg">
-                    </a>
-                    <a href="https://www.instagram.com/sarahlikestosleep/" target="_blank">
-                        <img src="shimages/instagram.svg">
-                    </a>
-                </div>
-                ---->
-
-
             </div>
-            <img src="shimages/sarah.png" alt="">   
+            <img src="shimages/sarah.png" alt="sarah">  
         </div>
     </section>
-
+    <!---
+        <div class="contact_links">
+            <a href="https://twitter.com/sarahthejourno" target="_blank">
+                <img src="shimages/twitter.svg">
+            </a>
+            <a href="https://www.linkedin.com/in/sarah-harris-79625115b/" target="_blank">
+                <img src="shimages/linkedin.svg">
+            </a>
+            <a href="https://www.instagram.com/sarahlikestosleep/" target="_blank">
+                <img src="shimages/instagram.svg">
+            </a>
+        </div>
+    --->
     <!-- Recent Work -->
     <main>
         <h2>Recent Work</h2> 
@@ -93,7 +103,7 @@
                     <h3>Losing my religion</h3>
                     <span>April 1, 2022</span>
                     <p> Anyone who's grown up in a religious family knows how faith plays a role in almost every aspect of life. 
-                        <br>It was the case for me after I moved ..... 
+                        It was the case for me after I moved to the UK from Pakistan ..... 
                     </p>
                         <a href="https://www.lacunavoices.com/explore-world-with-lacuna-voices/losing-faith-in-islam-recovery" target="_blank" class="icon">
                             <i class="fa fa-external-link" aria-hidden="true"></i>
@@ -111,7 +121,7 @@
                     <span>March 23, 2022</span>
                     <p>Endometriosis is a common chronic condition that impacts 
                         1 in 10 women during their reproductive years.
-                        The condition has signifcant impact on  ....
+                        The condition has signifcant impact on the quality of life of women  ....
                     </p>
                     <a href="https://getmegiddy.com/talking-about-endometriosis-relationship" target="_blank" class="icon">
                         <i class="fa fa-external-link" aria-hidden="true"></i>
@@ -172,66 +182,10 @@
             <a href="portfolio.html">View Full Portfolio</a>
         </div>
     </main>
-
-    <!-- Global Styling -->
     <footer>
         <p>&copy; Sarah Harris 2022</p>
     </footer>
-
-   
-    <!-- Mobile version 
-     <header>
-        <div id="nav">
-            <div id="label">
-                <a href="index.html">Sarah Harris</a>
-            </div>
-            <div id="menu_icon" onclick="menuOpen()">
-                <a href="#">
-                    <i class="fa fa-bars fa-1x" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div id="side_menu" onclick="menuClose()">
-                <a href="#">
-                    <i class="fa fa-times" aria-hidden="true"></i>
-                </a>
-                <a href="index.html">Home</a>
-                <a href="#">Portfolio</a>
-                <a href="#">About</a>
-                <a href="#">Coming soon</a> 
-            </div>
-        </div>
-    </header>
-    <main onclick="sideView()">
-        <div id="hero_section">
-            <div id="top_hero"></div>
-            <div id="image">
-               <img class= "caption" src="shimages/Group.svg">
-            </div>
-            <div id="bottom_hero">
-                <a href="https://twitter.com/sarahthejourno" target="_blank"><img id="twitter" src="shimages/twitter.svg"></a>
-                <a href="https://www.linkedin.com/in/sarah-harris-79625115b/" target="_blank"><img id="linkedin" src="shimages/linkedin.svg"></a>
-                <a href="https://www.instagram.com/sarahlikestosleep/" target="_blank"><img id="instagram" src="shimages/instagram.svg"></a>
-            </div>
-        </div> 
-        <div id="recent_work">
-            <h1>Recent Work</h1>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-    </main>
-    <footer>
-        <p>&copy Sarah Harris</p>
-    </footer> 
-    <script src="https://use.fontawesome.com/4fe03aa688.js"></script>
-    <script src="sarah.js"></script>
-
----->
     <script src="https://use.fontawesome.com/4fe03aa688.js"></script>
     <script src="sarah.js"></script>
 </body>
 </html>
-
-   

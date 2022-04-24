@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Roy Mugera">
+    <meta name="author" content="Developer Roy">
     <meta name="description" content="Sarah Harris, Freelance Journalist based in the UK"> <!--SEO-->
     <meta name="keywords" content="Freelance Journalist UK, Freelance Journalist near me"> <!--SEO-->
     <link rel="stylesheet" href="sarah.css">
-    <title>Sarah Harris | Contact</title>
+    <title> Contact | Sarah Harris </title>
 </head>
 <body>
-     <header>
+    <header>
         <div class="container">
             <div class="logo">
                 <a href="index.html">Sarah Harris</a>
@@ -24,12 +24,28 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <div id="mobile_nav">
+                <div id="menu_icon" onclick="menuOpen()">
+                    <a href="#">
+                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div id="side_menu" onclick="menuClose()">
+                    <a href="#">
+                        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a> 
+                </div>
+            </div>
         </div> 
-    </header>
+    </header> 
     <section id="contact">
         <div class="business_card">
             <div class="business_card_inner">
-              <div class="business_card_front">
+                <div class="business_card_front">
                 <div class="business_card_info">
                     <span>Sarah Harris</span>
                     <p>Freelance Journalist</p>
@@ -53,10 +69,10 @@
                         <span id="instagram_info">@sarahlikestosleep</span>
                     </div>
                 </div>     
-              </div>
-              <div class="business_card_back">
+                </div>
+                <div class="business_card_back">
                 <div class="card_logo"></div>
-              </div>
+                </div>
             </div>
         </div>
     </section>
@@ -64,6 +80,6 @@
         <p>&copy; Sarah Harris 2022</p>
     </footer>
     <script src="https://use.fontawesome.com/4fe03aa688.js"></script>
-    <script src="sarah.js"></script>
+    <script src="sarah.js"></script>   
 </body>
 </html>
