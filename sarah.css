@@ -437,6 +437,10 @@ main .btn a {
     top: 10px;
 }
 
+.links_info a {
+    color: #090C08;
+}
+
 .links_info span {
     height: 22px;
     position: relative;
