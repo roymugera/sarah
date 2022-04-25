@@ -563,7 +563,7 @@ main .btn a {
         margin: auto;
         margin-top: -5px;
         padding: 0;
-        height: 120vh;
+        height: 115vh;
     }
     
     #hero .container {
@@ -612,6 +612,10 @@ main .btn a {
     .box {
         margin: 20px 10px;
         height: auto;
+    }
+
+    .square_image {
+        object-position: 50% 10%; 
     }
 
     .square_bottom {
