@@ -103,6 +103,9 @@ a {
     cursor: pointer;
 }
 
+.page_container {
+    overflow-x: hidden;
+}
 
 /** Hero Section **/
 
@@ -230,10 +233,6 @@ main .btn a {
 
 /** Portfolio **/
 
-#portfolio {
-    display: grid;
-}
-
 #portfolio .filter {
     display: flex;
     justify-content: space-between;
@@ -244,13 +243,30 @@ main .btn a {
 }
 
 #portfolio .container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*
+ width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
-}
+
+*/
+
 
 .box-content {
     display: flex;
@@ -372,7 +388,7 @@ h3 {
 /** About **/
 
 #about {
-   margin-bottom: 100px;
+   margin-bottom: 200px;
 }
 
 #about .container {
@@ -553,10 +569,7 @@ h3 {
 
 
 
-@media screen and (min-width:320px) and (max-width:576px) {
-    body {
-        overflow-x: hidden;
-    }
+@media screen and (min-width:320px) and (max-width:375px) {
 
     header {
         visibility: hidden;
@@ -640,7 +653,7 @@ h3 {
         width: 100%;
         background-color: #CB9F7F;
         padding: 80px 0;
-        height: 70vh;
+        height: 110vh;
     }
     
     #hero .container {
@@ -686,11 +699,6 @@ h3 {
         text-align: center;
         font-size: 14px;
     }
-    
-    .box {
-        margin: 20px 10px;
-        height: auto;
-    }
 
     .square_image {
         object-position: 50% 10%; 
@@ -711,21 +719,29 @@ h3 {
         width: auto;
     }
 
-    #portfolio .container {
-        width: 90%;
-        margin: 10px auto;
-        margin-top: 50px;
+    #portfolio .box {
+        width: 90vw;
     }
 
     .pagination {
         text-align: center;
-        margin: 30px 30px 60px;
+        margin: auto;
+        width: auto;
         user-select: none;
+    }
+    
+    .pagination li a {
+        font-size: 1em; 
+    }
+
+    .previous-page, .next-page { 
+        width: 50px;
     }
     
     #about {
         height: 100%;
-        margin: 200px 0 100px 0;
+        margin-top: 40px;
+        margin-bottom: 50px;
     }
 
     #about .container {
@@ -746,14 +762,10 @@ h3 {
         display: none;
     }
 
-    #contact {
-        margin: 50px 0 0 0;
-    }
-
     .business_card {
         width: 85vw;
         position: relative;
-        top: 30px;
+        top: -30px;
     }
 
     .business_card_front {
