@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Developer Roy">
+    <meta name="author" content="Omwami Roy">
     <meta name="description" content="Sarah Harris, Freelance Journalist based in the UK"> <!--SEO-->
     <meta name="keywords" content="Freelance Journalist UK, Freelance Journalist near me"> <!--SEO-->
     <link rel="stylesheet" href="sarah.css">
@@ -12,25 +12,25 @@
 </head>
 <body>
     <div class="page_container">
-        <header class="second_header">
+        <header>
             <div class="container">
                 <div class="logo">
-                    <a href="index.html">Sarah Harris</a>
+                    <a href="index.html"><img src="shimages/logo1.svg"></a>
                 </div>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="portfolio.html" class="live">Portfolio</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </nav>
-            </div> 
+                </nav>  
+            </div>    
         </header> 
-        <div class="mobile_header second_header">
+        <div class="mobile_header">
             <div class="container">
                 <div class="mobile_logo">
-                    <a href="index.html">Sarah Harris</a>
+                    <a href="index.html"><img src="shimages/logo1.svg"></a>
                 </div>
                 <div id="menu_icon" onclick="menuOpen()">
                     <a href="#">
@@ -47,11 +47,10 @@
                     <a href="contact.html">Contact</a> 
                 </div>
             </div>
-           
-        </div> 
+        </div>
         <section id="portfolio" onclick="sideView()">
             <div class="container">
-                    <!--- Page 1 (21 articles) --->
+                <div class="box-content" style="display: none;">
                     <div class="box">
                         <div class="square_top">
                             <img src="shimages/getmegiddy.svg" class="press_logo">
@@ -102,7 +101,7 @@
                                 <i class="fa fa-external-link" aria-hidden="true"></i>
                             </a>
                         </div>
-                    </div>
+                    </div>  
                     <div class="box">
                         <div class="square_top">
                             <img src="shimages/metro.svg" class="press_logo">
@@ -316,7 +315,7 @@
                     </div>
                     <div class="box">
                         <div class="square_top">
-                            <img src="shimages/converted.svg" class="press_logo">
+                            <img src="shimages/metro.svg" class="press_logo">
                             <img src="shimages/freeze.WEBP" class="square_image">
                         </div>    
                         <div class="square_bottom">
@@ -410,9 +409,6 @@
                               </a>
                         </div>
                     </div>
-    
-                    <!--- Page 2 (21 articles) -->
-    
                     <div class="box">
                         <div class="square_top">
                             <img src="shimages/impact .PNG" class="press_logo">
@@ -445,12 +441,64 @@
                             </a>
                         </div>
                     </div>
+
+                    <div class="pagination">
+                        <li class="page-item previous-page disable"><a class="page-link" href="#">Prev</a></li>
+                        <li class="page-item current-page active"><a class="page-link" href="#">1</a></li>
+
+
+
+                        <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
+
+
+                        <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+
+
+                        <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
+                        <li class="page-item next-page"><a class="page-link" href="#">Next</a></li>
+                    </div>
+                </div>
             </div>
+            <!--
+
+                 <div class="filter">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for articles..."
+                 title="Type in a name">
+
+                 <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">All Publications</button>
+                    <div id="myDropdown" class="dropdown-content"> 
+                        <a href="#">All Publications</a>
+                        <a href="#aurelia">Aurelia Magazine</a>
+                        <a href="#beauty">Beauty Bay Edited</a>
+                        <a href="#cosmo">cosmopolitan</a>
+                        <a href="#digital">Digital Spy</a>
+                        <a href="#gai">Gai Rhydd</a>
+                        <a href="#galdem">Gal-dem</a>
+                        <a href="#giddy">Giddy</a>
+                        <a href="#graduate">The Graduate Club</a>
+                        <a href="#hysterical">Hysterical Women</a>
+                        <a href="#impact">Impact</a>
+                        <a href="#lacuna">Lacuna Voices</a>
+                        <a href="#mosa">Mosa Magazine</a>
+                        <a href="#metro">Metro</a>
+                        <a href="#refinery">Refinery 29</a>
+                        <a href="#yahoo">Yahoo! News</a>
+                    </div>
+                 </div>
+            </div>
+
+
+
+            -->
         </section>
         <footer>
             <p>&copy; Sarah Harris 2022</p>
         </footer>
     </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/4fe03aa688.js"></script>
     <script src="sarah.js"></script>
 </body>

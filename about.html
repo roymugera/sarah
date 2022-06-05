@@ -11,86 +11,258 @@
     <title> About | Sarah Harris </title>
 </head>
 <body>
-    <div class="page_container">
-        <header class="second_header">
-            <div class="container">
-                <div class="logo">
-                    <a href="index.html">Sarah Harris</a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="shimages/logo1.svg"></a>
             </div>
-            
-        </header> 
-        <div class="mobile_header second_header">
-            <div class="container">
-                <div class="mobile_logo">
-                    <a href="index.html">Sarah Harris</a>
-                </div>
-                <div id="menu_icon" onclick="menuOpen()">
-                    <a href="#">
-                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div id="side_menu" onclick="menuClose()">
-                    <a href="#">
-                        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-                    </a>
-                    <a href="index.html">Home</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a> 
-                </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html" class="live">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>  
+        </div>    
+    </header> 
+    <div class="mobile_header">
+        <div class="container">
+            <div class="mobile_logo">
+                <a href="index.html"><img src="shimages/logo1.svg"></a>
             </div>
-        </div>  
-        <section id="about">
+            <div id="menu_icon" onclick="menuOpen()">
+                <a href="#">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div id="side_menu" onclick="menuClose()">
+                <a href="#">
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a> 
+            </div>
+        </div>
+    </div>
+    <section id="about">
+        <div class="container">
+            <div class="top">
+                <h3>Heading</h3>
+                <p> 
+                I'm a multi-award nominated freelance journalist, writing on a wide range of topics from Film & TV to women's health!.
+                I'm currently pursuing a Master's in Public Health (MPH) at the University of Nottingham, with hopes that this will lead on to PhD research in the field of 
+                women's health disparities. 
+                I completed my BA in Journalism, Media, and Sociology from Cardiff University in 2020. <br><br>
+
+                During my time in Cardiff, I had the pleasure of working closely across the university's award-winning media platforms; 
+                Quench Magazine, Gair Rhydd Newspaper and Xpress Radio. In 2017 I served as the Advice Editor for Gair Rhydd and had the pleasure of working with a 
+                wide range of other editors to publish high quality content. I also hosted a morning talk-show on Xpress Radio where I discussed popular trends with
+                my co-host. In 2018 I was appointed the Food and Drink Editor for Quench Magazine. Throughout my time at Cardiff, I was nominated for 3 Cardiff 
+                Student Media Awards and had the pleasure of winning the 'Best Contributor Award' from Gair Rhydd Newspaper in 2017. <br><br>
+
+                Since 2020, I have had the pleasure of regularly writing for several print and digital publications including Cosmopolitan UK, Refinery 29, Metro, 
+                Lacuna Voices, Giddy, Nottinghamshire Live, Beauty Bay, Gal-dem and more. I am also a regular guest on BBC Asian Networks 'Debate Show' where I have spoken on a 
+                number of topics, including arranged marriages and mental health. 
+                I have also spoken on other radio channels such as BBC Radio 4 and BBC Radio West Midlands. <br><br>
+
+                I'm a well-known advocate for women's health inequalities and regularly write and speak about my own experiences with dismissal and my 
+                journey with Endometriosis. For Endometriosis Awareness Month in 2022, I had the pleasure of working with Freeda Media to create an awareness 
+                video on the condition. 
+
+                I am available for commissions and assignments. You can reach me at <a href="#">sarahharrisjourno@gmail.com.</a>
+            </p>
+            </div>
+            <div class="bottom">
+                <img src="shimages/sarah.png">
+            </div>   
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; Sarah Harris 2022</p>
+    </footer>
+   
+    <script src="https://use.fontawesome.com/4fe03aa688.js"></script>
+    <script src="sarah.js"></script>  
+</body>
+</html>
+
+<!---
+
+     <section id="about">
             <div class="container">
                 <div class="top">
                     <h3>Heading</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nullam mattis nisl et semper volutpat. Nulla consectetur, 
-                        nisl a ultricies sodales, sapien turpis semper sapien, 
-                        sed accumsan massa turpis non est. Nulla a lacus nulla. 
-                        Fusce eleifend nisi ligula, egestas aliquet ex luctus nec. 
-                        Vestibulum tincidunt efficitur mi, at convallis neque vulputate 
-                        eget. Orci varius natoque penatibus et magnis dis parturient 
-                        montes, nascetur ridiculus mus. Mauris eu tortor et urna 
-                        sollicitudin porttitor. Aenean eget velit et mauris vulputate 
-                        accumsan. Interdum et malesuada fames ac ante ipsum primis in 
-                        faucibus.<br><br>
+                    <p> 
+                    I'm a multi-award nominated freelance journalist, writing on a wide range of topics from Film & TV to women's health!.
+                    I'm currently pursuing a Master's in Public Health (MPH) at the University of Nottingham, with hopes that this will lead on to PhD research in the field of 
+                    women's health disparities. 
+                    I completed my BA in Journalism, Media, and Sociology from Cardiff University in 2020. <br><br>
     
-                        Mauris et nunc ac eros dictum tempor. Donec lobortis congue 
-                        nulla, in facilisis massa ultrices ac. Nulla venenatis urna 
-                        vitae leo porta, quis pharetra dui consectetur. Morbi commodo 
-                        mi eu neque sollicitudin, non consectetur libero tristique. 
-                        Nulla at pellentesque diam. Vivamus quis lorem quis risus mattis 
-                        venenatis non a diam. Ut pharetra enim sit amet enim auctor, 
-                        nec egestas ex consectetur. Pellentesque ipsum elit, pharetra 
-                        pellentesque eleifend eu, sodales scelerisque felis. Sed pulvinar
-                        lacus quis lorem dictum, vel tristique massa tincidunt. Donec a 
-                        elementum neque. In ac eleifend turpis, id dignissim quam. 
-                        Suspendisse egestas lobortis gravida. Sed vulputate facilisis 
-                        sem ut porta. Nullam sit amet imperdiet ligula.<br><br>
-                        
-                    </p>
+                    During my time in Cardiff, I had the pleasure of working closely across the university's award-winning media platforms; 
+                    Quench Magazine, Gair Rhydd Newspaper and Xpress Radio. In 2017 I served as the Advice Editor for Gair Rhydd and had the pleasure of working with a 
+                    wide range of other editors to publish high quality content. I also hosted a morning talk-show on Xpress Radio where I discussed popular trends with
+                    my co-host. In 2018 I was appointed the Food and Drink Editor for Quench Magazine. Throughout my time at Cardiff, I was nominated for 3 Cardiff 
+                    Student Media Awards and had the pleasure of winning the 'Best Contributor Award' from Gair Rhydd Newspaper in 2017. <br><br>
+    
+                    Since 2020, I have had the pleasure of regularly writing for several print and digital publications including Cosmopolitan UK, Refinery 29, Metro, 
+                    Lacuna Voices, Giddy, Nottinghamshire Live, Beauty Bay, Gal-dem and more. I am also a regular guest on BBC Asian Networks 'Debate Show' where I have spoken on a 
+                    number of topics, including arranged marriages and mental health. 
+                    I have also spoken on other radio channels such as BBC Radio 4 and BBC Radio West Midlands. <br><br>
+    
+                    I'm a well-known advocate for women's health inequalities and regularly write and speak about my own experiences with dismissal and my 
+                    journey with Endometriosis. For Endometriosis Awareness Month in 2022, I had the pleasure of working with Freeda Media to create an awareness 
+                    video on the condition. 
+    
+                    I am available for commissions and assignments. You can reach me at <a href="#">sarahharrisjourno@gmail.com.</a>
+                </p>
                 </div>
                 <div class="bottom">
                     <img src="shimages/sarah.png">
                 </div>   
             </div>
         </section>
-        <footer>
-            <p>&copy; Sarah Harris 2022</p>
-        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <img src="shimages/sarah.png">
+
+     <div class="page_container">
+        
+        </div>  
+        <section id="about">
+            <div class="container">
+                <div class="content">
+                    <h3>About</h3>
+                   
+                </div>
+               
+            </div>
+        </section>
+       
     </div>
-    <script src="https://use.fontawesome.com/4fe03aa688.js"></script>
-    <script src="sarah.js"></script>  
-</body>
-</html>
+
+    <div class="container">
+                <div>
+                    <h3>About</h3>
+                    <p> 
+
+                        I'm a multi-award nominated freelance journalist, writing on a wide range of topics from Film & TV to women's health!.
+                        I'm currently pursuing a Master's in Public Health (MPH) at the University of Nottingham, with hopes that this will lead on to PhD research in the field of 
+                        women's health disparities. 
+                        I completed my BA in Journalism, Media, and Sociology from Cardiff University in 2020. <br><br>
+
+                        During my time in Cardiff, I had the pleasure of working closely across the university's award-winning media platforms; 
+                        Quench Magazine, Gair Rhydd Newspaper and Xpress Radio. In 2017 I served as the Advice Editor for Gair Rhydd and had the pleasure of working with a 
+                        wide range of other editors to publish high quality content. I also hosted a morning talk-show on Xpress Radio where I discussed popular trends with
+                        my co-host. In 2018 I was appointed the Food and Drink Editor for Quench Magazine. Throughout my time at Cardiff, I was nominated for 3 Cardiff 
+                        Student Media Awards and had the pleasure of winning the 'Best Contributor Award' from Gair Rhydd Newspaper in 2017. <br><br>
+
+                        Since 2020, I have had the pleasure of regularly writing for several print and digital publications including Cosmopolitan UK, Refinery 29, Metro, 
+                        Lacuna Voices, Giddy, Nottinghamshire Live, Beauty Bay, Gal-dem and more. I am also a regular guest on BBC Asian Networks 'Debate Show' where I have spoken on a 
+                        number of topics, including arranged marriages and mental health. 
+                        I have also spoken on other radio channels such as BBC Radio 4 and BBC Radio West Midlands. <br><br>
+
+                        I'm a well-known advocate for women's health inequalities and regularly write and speak about my own experiences with dismissal and my 
+                        journey with Endometriosis. For Endometriosis Awareness Month in 2022, I had the pleasure of working with Freeda Media to create an awareness 
+                        video on the condition. <br><br>
+
+                        I am available for commissions and assignments. You can reach me at sarahharrisjourno@gmail.com.
+                    </p>
+
+                </div>
+                <img src="shimages/sarah.png">
+
+
+                <div class="bottom">
+                    <img src="shimages/sarah.png">
+                </div>   
+
+
+</div>
+
+
+-->
