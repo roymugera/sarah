@@ -408,7 +408,7 @@ h3 {
 #about img {
     width: 400px;
     height: auto;
-    margin-top: -250px;
+    margin: auto;
 }
 
 /** Contact **/
@@ -804,8 +804,19 @@ h3 {
     } 
 }
 
+@media screen and (min-width: 667px) and (max-width:768px){
 
-@media screen and (min-width:577px) and (max-width:1440px){
+    #hero {
+        height: 150vh;
+    }
+
+    #contact {
+        height: 150vh;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:1919px){
 
     #hero {
         height: 85vh;
@@ -814,6 +825,8 @@ h3 {
     #hero img {
         width: 450px;
         height: 450px;
+        position: relative;
+        left: 80px;
     }
     
     #hero .content {
@@ -834,17 +847,21 @@ h3 {
 
     #about {
         height: 100%;
-        min-height: 110vh;
+        min-height: 60vh;
     }
 
     #about .container {
-        width: 65%;
-        position: relative;
-        top: 180px;
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
     }
 
     #about .top {
-        width: auto; 
+        width: 100%; 
     }
 
     #about p {
@@ -852,13 +869,53 @@ h3 {
     }
 
     #about img {
-        width: 350px;
+        width: 400px;
         height: auto;
+        display: flex;
+        margin: auto;
         position: relative;
-        top: -25px;
+        top: -120px;
     }
 }
 
+
+@media screen and (min-width: 1920px) {
+
+    #hero img {
+        width: 450px;
+        height: 450px;
+    }
+
+    #hero .content {
+        width: 60%;
+    }
+    
+     #about .container {
+         width: 65%;
+         margin: auto;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         margin-top: 100px;
+     }
+     
+     #about h3 {
+         padding: 0;
+     }
+     
+     #about img {
+         width: 400px;
+         height: auto;
+         margin: auto;
+     }
+
+     #about .top {
+         width: 65%;
+     }
+
+
+}
 
 /** 
 
